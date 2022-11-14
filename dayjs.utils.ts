@@ -5,6 +5,21 @@ import * as utc from 'dayjs/plugin/utc';
 import * as localizedFormat from 'dayjs/plugin/localizedFormat';
 import 'dayjs/locale/ar-sa';
 
+export enum DateFormat {
+  '0:00 PM' = 'LT',
+  '0:00:00 PM' = 'LTS',
+  '00/00/0000' = 'L',
+  '0/00/0000' = 'l',
+  'Aug 16, 2018' = 'll',
+  'Aug 16, 2018 0:00 PM' = 'lll',
+  'Thu, Aug 16, 2018 0:00 PM' = 'llll',
+  '00/00/0000 0:00 PM' = 'L LT',
+  '00/00/0000 0:00:00 PM' = 'L LTS',
+  'August 16, 2018' = 'LL',
+  'August 16, 2018 0:00 PM' = 'LLL',
+  'Thursday, August 16, 2018 0:00 PM' = 'LLLL',
+}
+
 enum variables {
   '$GETX' = 'يوم',
   '$GETXX' = 'الموافق',
